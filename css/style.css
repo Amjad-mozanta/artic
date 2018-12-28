@@ -9336,9 +9336,31 @@
   .btn:hover {
     background: #0a3071; }
 
+.gj-datepicker-bootstrap [role=right-icon] button {
+  height: 38px;
+  padding: 3px; }
+  .gj-datepicker-bootstrap [role=right-icon] button svg {
+    font-size: 23px; }
+
 #wrapper {
-  padding: 50px 15px;
-  width: 100%; }
+  padding: 70px 15px;
+  width: 100%;
+  positon: relative; }
+  #wrapper .span {
+    position: absolute;
+    margin-top: -10px;
+    top: 85px;
+    left: 100px; }
+    #wrapper .span a {
+      color: #2d2d2d; }
+      #wrapper .span a img {
+        max-width: 20px;
+        height: 20px; }
+    #wrapper .span:hover {
+      color: #133f8a; }
+  @media (max-width: 992px) {
+    #wrapper span {
+      left: 30px; } }
 
 .navbar-expand-lg .navbar-nav.side-nav {
   flex-direction: column; }
@@ -9379,13 +9401,13 @@
     background: #333;
     left: 0px;
     white-space: nowrap;
-    top: 16px;
+    top: 16px !important;
     border-radius: 3px;
     padding: 5px 10px;
     transition: .5s ease all; }
   .navbar-nav li a:hover .ttip {
     opacity: 1;
-    left: 70px; }
+    left: 70px !important; }
   .navbar-nav li a .ttip:after {
     right: 100%;
     top: 50%;
@@ -9413,11 +9435,39 @@
   border: 1px solid #ccc;
   padding: 5px;
   margin: 1% 0;
-  box-shadow: 3px 3px 2px #ccc;
+  /*box-shadow: 3px 3px 2px #ccc;*/
   transition: 0.5s; }
 
 .custab:hover {
-  box-shadow: 3px 3px 0px transparent;
+  /*box-shadow: 3px 3px 0px transparent;*/
   transition: 0.5s; }
+
+html {
+  font-family: 'Roboto', sans-serif; }
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #103980;
+  color: white;
+  background: #133f8a; }
+
+.invoiceBlock {
+  float: right;
+  border: 1px solid gainsboro; }
+  .invoiceBlock h3 {
+    text-align: left;
+    font-size: 14px;
+    padding: 0px 15px;
+    color: black;
+    display: block;
+    /* width: 76%; */
+    background: grey;
+    padding: 11px;
+    /* margin-right: 5px; */ }
+  .invoiceBlock p {
+    border-bottom: 1px solid gainsboro;
+    font-size: 12px; }
+    .invoiceBlock p span {
+      float: right; }
 
 /*# sourceMappingURL=style.css.map */
