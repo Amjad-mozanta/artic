@@ -29,6 +29,15 @@
     <!-- Custom styles for this template -->
     <link href="css/floating-labels.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#returnCount").click(function(){
+        $("#invoice").toggle();
+      });
+    });
+    </script>
+
     <!-- Custom styles for this template -->
   </head>
   <body>
@@ -107,14 +116,30 @@
         </div>
       </nav>
       <div class="container-fluid">
+        
+            <div class="row">
+              
+                  <div class="linksSet">
+                   <span class="linkss1"> <a href="#"><i class="fas fa-print"></i> Print</a></span>
+                   <span class="linkss2"> <a href="#"><i class="fas fa-envelope"></i> Email</a></span>
+                    
+                  </div>
+                
+              </div>
+
+        
         <!--Order Number Section-->
         <div class="row">
           <div class="col mb-2">
-            <div class="card">
+            <div class="card mb10">
               <div class="card-body">
                 <h4 class="card-title">Order Detail</h4>
-                <hr class="mb-3" />
-                <h5 class="primClr">ORDER NUMBER: DEV1051034</h5>
+              </div>
+            </div>
+              <div class="card">
+              <div class="card-body">
+                
+                <h6 class="primClr">ORDER NUMBER: DEV1051034</h6>
 
                 <div class="row">
                   <div class="col-md-3 mb-3">
@@ -153,7 +178,7 @@
           <div class="col">
             <div class="card drkbdr">
               <div class="card-body table-responsive">
-                <h4 class="card-title">Order Lines</h4>
+                <h5 class="card-title">Order Lines</h5>
                 <hr class="mb-3" />
                 <table class="  table table-striped custab">
                   <thead>
@@ -199,7 +224,7 @@
                 </table>
                 <div class="col-md-6 invoiceBlock">
                   <div class="row">
-                    <h3 class="col-md-12">Invoice</h3>
+                    <h6 class="col-md-12">Invoice</h6>
                     <div class="col-md-12">
                       <p>Order Level Discount <span>1500.00</span></p>
                       <p>Minus Adjustment<span>0.00</span></p>
@@ -222,14 +247,17 @@
         <div id="Result1" class="row">
           <div class="col">
             <div class="card drkbdr">
-              <div class="card-body table-responsive">
-                <h4 class="card-title">Shipping Information</h4>
-                <hr class="mb-3" />
+              <h5 class="card-title margiNfitHead">Shipping Information 
+                <span class="spanImg" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><img src="images/add.png"></span> </h5>
+              <div class="card-body table-responsive" style="padding-top:0px;">
+                
+                <div class="collapse" id="collapseExample">
                 <table class="  table table-striped custab">
                   <thead>
                     <tr>
                       <th scope="col">SKU</th>
                       <th scope="col">Product</th>
+                      <th scope="col col-md-1">Invoice</th>
                       <th scope="col">Requested Ship Date</th>
                       <th scope="col">Shipment Tracking ID</th>
                       <th scope="col">Shipping Method</th>
@@ -240,6 +268,7 @@
                     <tr>
                       <th scope="row">1</th>
                       <td>Plain Jersey T- Shirt</td>
+                      <td><a href="#"><img src="images/invoice.png"></a></td>
                       <td>11/13/2018</td>
                       <td>2</td>
                       <td>COD</td>
@@ -254,6 +283,7 @@
                     <tr>
                       <th scope="row">2</th>
                       <td>Printed Maroon jacket</td>
+                      <td><a href="#"><img src="images/invoice.png"></a></td>
                       <td>11/13/2018</td>
                       <td>2</td>
                       <td>COD</td>
@@ -268,6 +298,7 @@
                     <tr>
                       <th scope="row">3</th>
                       <td>Lenin Hand Made rounded color Kurthas</td>
+                      <td><a href="#"><img src="images/invoice.png"></a></td>
                       <td>11/13/2018</td>
                       <td>2</td>
                       <td>COD</td>
@@ -282,14 +313,21 @@
                   </tbody>
                 </table>
               </div>
+              </div>
             </div>
           </div>
         </div>
         <div id="Result1" class="row">
           <div class="col">
             <div class="card drkbdr">
+              <h5 class="card-title margiNfitHead">Payment Information
+                  <span class="spanImg" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2"><img src="images/add.png"></span>
+                </h5>
+              <div class="collapse" id="collapseExample2">
+
+
               <div class="card-body table-responsive">
-                <h4 class="card-title">Payment Information</h4>
+                
                 <hr class="mb-3" />
                 <table class="  table table-striped custab">
                   <thead>
@@ -310,33 +348,36 @@
                   </tbody>
                 </table>
               </div>
-            </div>
-          </div>
-        </div>
-        <!--Billing Address Section-->
-        <div class="row mv10">
-          <div class="col col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="primClr">Billing Address</h5>
 
-                <div class="row">
-                  <div class="col">
-                    <h6>Mr Arun Raj</h6>
-                    <p>TC-18/634</p>
-                    <p>Gunjan Steet, Thiruvalla</p>
-                    <p>Near Post office,Kottayam</p>
-                    <p>India</p>
+
+              <div class="col-md-12">
+                      <!--Billing Address Section-->
+                <div class="row mv10">
+                  <div class="col col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="primClr">Billing Address</h5>
+
+                        <div class="row">
+                          <div class="col">
+                            <h6>Mr Arun Raj</h6>
+                            <p>TC-18/634</p>
+                            <p>Gunjan Steet, Thiruvalla</p>
+                            <p>Near Post office,Kottayam</p>
+                            <p>India</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
 
         <!--Notes-->
         
-          <div class="col col-md-8">
+         <!-- <div class="col col-md-8">
             <div class="card">
               <div class="card-body">
                 <h5 class="primClr">Notes</h5>
@@ -365,20 +406,239 @@
                 </form>
               </div>
             </div>
-          </div>
+          </div>-->
         
         <!--Notes-->
 
-
-
-
-
-
-
-
-
         </div>
         <!--Billing Address Section-->
+
+
+
+ <!--Return Orders-->
+
+        <div id="Result1" class="row">
+          <div class="col">
+            <div class="card drkbdr">
+              <h5 class="card-title margiNfitHead">Return Orders
+                <span class="spanImg" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3"><img src="images/add.png"></span> </h5>
+              <div class="card-body table-responsive" style="padding-top:0px;">
+                
+                <div class="collapse" id="collapseExample3">
+
+                 
+
+                    <div class="returntotal">
+                      <div class="returntext">Total Return Orders</div>
+                      <div class="returnNumber"><a href="#" id="returnCount">5</a></div>
+                      
+                    </div>
+                  
+
+                 
+                    <!--Invoice Template-->
+
+                        <div id="invoice" style="display: none;">
+
+                            <div class="toolbar hidden-print">
+                                <div class="text-right">
+                                    <button id="printInvoice" class="btn btn-info"><i class="fas fa-print"></i> Print</button>
+                                   
+                                </div>
+                               
+                            </div>
+                            <div class="invoice overflow-auto">
+                                <div >
+                                    <header>
+                                        <div class="row">
+                                            <div class="col">
+                                                <a href="index.html" class="logo"
+          ><span class="sr-only">Al Futtaim</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="svg2"
+            version="1.1"
+            xml:space="preserve"
+            width="206.52362"
+            height="44"
+            viewBox="0 0 206.52362 44"
+          >
+            <g
+              id="g10"
+              transform="matrix(1.25,0,0,-1.25,-3.7533875e-4,43.999875)"
+            >
+              <path
+                d="m 137.55816,21.780647 5.03035,0 0,3.344818 -5.03035,0 0,-3.344818 z m -55.369723,3.344818 0,-20.1165547 5.028275,0 0,10.0586227 3.369677,0 0,-6.7138044 1.684838,-3.3448183 11.744843,0 0,10.0586227 2.51276,0 0,-10.0586227 5.02965,0 0,10.0586227 2.51414,0 0,-10.0586227 5.02758,0 0,10.0586227 2.5169,0 0,3.344128 -2.5169,0 0,3.368986 -5.02758,0 0,-3.368986 -2.51414,0 0,3.368986 -5.02965,0 0,-3.368986 -7.568657,0 0,-10.0579324 -3.344128,0 0,10.0579324 -8.399333,0 0,3.368986 8.399333,0 0,3.344818 -13.427608,0 z m -13.40206,-20.1165547 5.028966,0 0,20.1165547 -5.028966,0 0,-20.1165547 z M 57.041535,25.125465 50.329112,5.0089103 l 5.028275,0 2.514829,6.6896367 3.368986,0 0,-6.6896367 5.029656,0 0,20.1165547 -9.229323,0 z m 4.199667,-3.344818 0,-6.713114 -2.538996,0 2.538996,6.713114 z m 76.316958,-16.7717367 5.03035,0 0,13.4027507 -5.03035,0.02417 0,-13.4269177 z m 7.54379,13.4027507 0,-13.4027507 5.03104,0 0,10.0586227 2.51414,0 0,-10.0586227 5.02689,0 0,10.0586227 2.51552,0 0,-10.0586227 5.02966,0 0,10.0586227 -1.6586,3.344128 -18.45865,0 z m -21.80208,0 -1.68277,-3.344128 0,-6.7138044 1.68277,-3.3448183 11.74484,0 0,13.4027507 -11.74484,0 z m 3.34482,-3.344128 3.36899,0 0,-6.7144949 -3.36899,0 0,6.7144949 z m -51.145199,-3.344818 5.028966,0 0,3.371057 -5.028966,0 0,-3.371057 z"
+                style="fill:#133f8a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                id="logo-a"
+              ></path>
+              <g
+                id="g14"
+                transform="matrix(0.69050748,0,0,0.69050748,20.145856,35.1999)"
+              >
+                <path
+                  d="m 0,0 -29.175,-29.112 7.296,-7.283 7.326,7.258 7.264,-7.289 -7.311,-7.316 7.311,-7.235 7.146,7.254 7.445,-7.254 7.249,7.254 -7.249,7.25 7.327,7.336 7.25,-7.258 7.265,7.258 L 0,0 Z M -7.25,-21.839 0,-14.582 7.248,-21.839 0,-29.095 l -7.25,7.256 z"
+                  style="fill:#133f8a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                  id="path16"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </a>
+                                            </div>
+                                            <div class="col company-details">
+                                                <h2 class="name">
+                                                    <a target="_blank" href="https://www.alfuttaim.com">
+                                                    Al Futtaim
+                                                    </a>
+                                                </h2>
+                                                <div>Lorem Ipsum is simply dummy text of the </div>
+                                                <div>Lorem Ipsum is simply </div>
+                                                <div>company@example.com</div>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <main>
+                                        <div class="row contacts">
+                                            <div class="col invoice-to">
+                                                <div class="text-gray-light">INVOICE TO:</div>
+                                                <h2 class="to">John Doe</h2>
+                                                <div class="address">796 Silver Harbour, TX 79273, US</div>
+                                                <div class="email"><a href="mailto:john@example.com">john@example.com</a></div>
+                                            </div>
+                                            <div class="col invoice-details">
+                                                <h1 class="invoice-id">INVOICE 3-2-1</h1>
+                                                <div class="date">Date of Invoice: 01/10/2018</div>
+                                                <div class="date">Due Date: 30/10/2018</div>
+                                            </div>
+                                        </div>
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th class="text-left">Product</th>
+                                                    <td class="unit"></td>
+                                                    <th class="text-right">Qty</th>
+                                                    <th class="text-right">TOTAL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="no">01</td>
+                                                    <td class="text-left"><h3>
+                                                        <a target="_blank" href="">
+                                                        Plain Jersey T- Shirt
+                                                        </a>
+                                                        </h3>
+                                                       
+                                                    </td>
+                                                    <td class="unit"></td>
+                                                    <td class="qty">100</td>
+                                                    <td class="total">$135.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="no">02</td>
+                                                    <td class="text-left"><h3>
+                                                        <a target="_blank" href="">
+                                                        Printed Maroon jacket
+                                                        </a>
+                                                        </h3>
+                                                       
+                                                    </td>
+                                                    <td class="unit"></td>
+                                                    <td class="qty">100</td>
+                                                    <td class="total">$94.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="no">03</td>
+                                                    <td class="text-left"><h3>
+                                                        <a target="_blank" href="">
+                                                        Lenin Hand Made rounded color Kurthas
+                                                        </a>
+                                                        </h3>
+                                                       
+                                                    </td>
+                                                    <td class="unit"></td>
+                                                    <td class="qty">100</td>
+                                                    <td class="total">$57.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="no">04</td>
+                                                    <td class="text-left"><h3>
+                                                        <a target="_blank" href="">
+                                                        Plain Jersey T- Shirt
+                                                        </a>
+                                                        </h3>
+                                                       
+                                                    </td>
+                                                    <td class="unit"></td>
+                                                    <td class="qty">100</td>
+                                                    <td class="total">$147.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                                                    <td colspan="2">SUBTOTAL</td>
+                                                    <td>$5,200.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                                                    <td colspan="2">TAX 25%</td>
+                                                    <td>$1,300.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                                                    <td colspan="2">GRAND TOTAL</td>
+                                                    <td>$6,500.00</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        <div class="thanks">Thank you!</div>
+                                        <div class="notices">
+                                            <div>NOTICE:</div>
+                                            <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
+                                        </div>
+                                    </main>
+                                    <footer>
+                                        Invoice was created on a computer and is valid without the signature and seal.
+                                    </footer>
+                                </div>
+                                <!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
+                                <div></div>
+                            </div>
+                        </div>
+                    <!--Invocie template-->
+
+
+                 
+                
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+ <!--Return Orders-->
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-1 mt-2 mb-2 fr " style="padding-right: 0 ">
+          <button id="SubmitBtn" onclick="window.location.href='orderSearch2.html'" class="btn btn-primary btn-lg btn-block fr"type="submit">Okay</button>
+        </div>
+        <div class="col-md-2 mt-2 mb-2 fr " style="padding-right: 0 ">
+          <button id="SubmitBtn" class="bgc-gray white btn-default btn-lg btn-block fr"type="submit">Return Orders</button>
+        </div>
 
       </div>
     </div>
@@ -399,6 +659,15 @@
         $('#wrapper').toggleClass("open");
         e.preventDefault();
       });
+       $('#printInvoice').click(function(){
+            Popup($('.invoice')[0].outerHTML);
+            function Popup(data) 
+            {
+                window.print();
+                return true;
+            }
+        });
+ 
     </script>
   </body>
 </html>

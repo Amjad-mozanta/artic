@@ -44,9 +44,9 @@
     <!------ Include the above in your HEAD tag ---------->
 
     <div id="wrapper" class="animate">
-      <span class="span"
-        ><a href="#"><i class="fas fa-long-arrow-alt-left"></i> Back</a></span
-      >
+      <!--<span class="span"
+        ><a href="index.html"><i class="fas fa-long-arrow-alt-left"></i> Back</a></span
+      >-->
       <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark ">
         <a href="index.html" class="logo"
           ><span class="sr-only">Al Futtaim</span>
@@ -142,7 +142,7 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                       <label for="orderNumber">Order Number</label>
                       <input
                         type="text"
@@ -153,7 +153,7 @@
                       />
                       <div class="invalid-feedback">Order Number required.</div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3 mb-3">
                       <label for="custName">Cutomer Name</label>
                       <input
                         type="text"
@@ -166,8 +166,8 @@
                         Customer name required.
                       </div>
                     </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="email">Email Name Starts With</label>
+                    <div class="col-md-3 mb-3">
+                      <label for="email">Customer Email</label>
                       <input
                         type="text"
                         class="form-control"
@@ -177,14 +177,31 @@
                       />
                       <div class="invalid-feedback">email required.</div>
                     </div>
+
+                    <div class="col-md-3 mb-3">
+                      <label for="country">Match Case begining With</label>
+                      <select
+                        class="custom-select d-block w-100"
+                        id="brand"
+                        required=""
+                      >
+                        <option value="">Choose...</option>
+                        <option>Match Case 1</option>
+                        <option>Match Case 2</option>
+                        <option>Match Case 3</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid Match Case.
+                      </div>
+                    </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <label for="startDate">Range from</label>
+                    <div class="col-md-3 mb-3">
+                      <label for="startDate">Date from</label>
                       <input id="startDate" class="form-control" width="100%" />
                     </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="endDate">Range to</label>
+                    <div class="col-md-3 mb-3">
+                      <label for="endDate">Date to</label>
                       <input id="endDate" class="form-control" width="100%" />
                     </div>
                   </div>
@@ -208,7 +225,7 @@
           <div class="col">
             <div class="card drkbdr">
               <div class="card-body table-responsive">
-                <h4 class="card-title">Search Result</h4>
+                <h4 class="card-title">Search Results</h4>
                 <a href="#" style="color: black;"
                   ><i
                     class="fas fa-download right"
@@ -248,17 +265,31 @@
                     </tr>
                     <tr>
                       <th scope="row">
-                        <a href="orderDetail.html">DEV233445</a>
+                        <a href="orderDetail.html">DEV324432</a>
                       </th>
-                      <td>Vimal Kumar</td>
-                      <td>vimalk@gmail.com</td>
-                      <td>9567447233</td>
+                      <td>Anil Kumar</td>
+                      <td>anilK@gmail.com</td>
+                      <td>933447233</td>
+                      <td>HD</td>
+                      <td>Rejected</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>open</td>
+                      <td>70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV3410456</a>
+                      </th>
+                      <td>Sujith Mohan</td>
+                      <td>sujithM.a@gmail.com</td>
+                      <td>984435562</td>
                       <td>HD</td>
                       <td>Accepted</td>
                       <td>toysrus-UAE</td>
                       <td>11/13/2018</td>
-                      <td>open</td>
-                      <td>50</td>
+                      <td>new</td>
+                      <td>456</td>
                     </tr>
                     <tr>
                       <th scope="row">
@@ -274,13 +305,144 @@
                       <td>new</td>
                       <td>708</td>
                     </tr>
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV3410456</a>
+                      </th>
+                      <td>Raman Raghav</td>
+                      <td>raman.Raghav@gmail.com</td>
+                      <td>9843566462</td>
+                      <td>HD</td>
+                      <td>Accepted</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>new</td>
+                      <td>457</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV3410456</a>
+                      </th>
+                      <td>Meena</td>
+                      <td>meena@gmail.com</td>
+                      <td>9843566462</td>
+                      <td>HD</td>
+                      <td>Pending</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>new</td>
+                      <td>708</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV3410456</a>
+                      </th>
+                      <td>Reshma</td>
+                      <td>reshma.vikhil@gmail.com</td>
+                      <td>995645756</td>
+                      <td>HD</td>
+                      <td>Accepted</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>new</td>
+                      <td>708</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV3410456</a>
+                      </th>
+                      <td>Pachu Basil</td>
+                      <td>pachu.basil@gmail.com</td>
+                      <td>9867789979</td>
+                      <td>HD</td>
+                      <td>Rejected</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>new</td>
+                      <td>344</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV3410456</a>
+                      </th>
+                      <td>Rathi S Nair</td>
+                      <td>rathi.s@gmail.com</td>
+                      <td>9956234568</td>
+                      <td>HD</td>
+                      <td>Accepted</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>new</td>
+                      <td>732</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV3410456</a>
+                      </th>
+                      <td>Nila Sujith</td>
+                      <td>nila.sujith@gmail.com</td>
+                      <td>9843566462</td>
+                      <td>HD</td>
+                      <td>Pending</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>new</td>
+                      <td>708</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV3410456</a>
+                      </th>
+                      <td>Nila Sujith</td>
+                      <td>nila.sujith@gmail.com</td>
+                      <td>9843566462</td>
+                      <td>HD</td>
+                      <td>Open</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>new</td>
+                      <td>708</td>
+                    </tr>
+
+
                   </tbody>
                 </table>
+              <!--Pagination-->
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item active">
+                      <span class="page-link">
+                        1
+                        <span class="sr-only">(current)</span>
+                      </span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              <!--Pagination-->
               </div>
+
             </div>
           </div>
         </div>
       </div>
+      <!--<span class="span2"
+        ><a href="index.html"><i class="fas fa-long-arrow-alt-left"></i> Back</a></span
+      >-->
     </div>
     <script>
       var today = new Date(

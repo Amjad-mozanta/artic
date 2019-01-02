@@ -50,7 +50,9 @@
     <!------ Include the above in your HEAD tag ---------->
 
     <div id="wrapper" class="animate">
-      <span class="span"><a href="index.html"><i class="fas fa-long-arrow-alt-left"></i> Back</a></span>
+      <span class="span"
+        ><a href="#"><i class="fas fa-long-arrow-alt-left"></i> Back</a></span
+      >
       <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark ">
         <a href="index.html" class="logo"
           ><span class="sr-only">Al Futtaim</span>
@@ -128,7 +130,7 @@
                 <hr class="mb-3" />
                 <form class="needs-validation" novalidate="">
                   <div class="row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-6 mb-3">
                       <label for="country">Brand</label>
                       <select
                         class="custom-select d-block w-100"
@@ -158,7 +160,18 @@
                       <div class="invalid-feedback">Order Number required.</div>
                     </div>
                     <div class="col-md-3 mb-3">
-                      <label for="custName">Customer Name</label>
+                      <label for="Phone">Phone</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="Phone"
+                        placeholder=""
+                        required=""
+                      />
+                      <div class="invalid-feedback">Phone Number required.</div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="custName">Cutomer Name</label>
                       <input
                         type="text"
                         class="form-control"
@@ -171,7 +184,7 @@
                       </div>
                     </div>
                     <div class="col-md-3 mb-3">
-                      <label for="email">Customer Email</label>
+                      <label for="email">Email Name Starts With</label>
                       <input
                         type="text"
                         class="form-control"
@@ -181,33 +194,12 @@
                       />
                       <div class="invalid-feedback">email required.</div>
                     </div>
-
                     <div class="col-md-3 mb-3">
-                      <label for="country">Match Case begining With</label>
-                      <select
-                        class="custom-select d-block w-100"
-                        id="brand"
-                        required=""
-                      >
-                        <option value="">Choose...</option>
-                        <option>Match Case 1</option>
-                        <option>Match Case 2</option>
-                        <option>Match Case 3</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select a valid Match Case.
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <label for="startDate">Date from</label>
+                      <label for="startDate">Range from</label>
                       <input id="startDate" class="form-control" width="100%" />
                     </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="endDate">Date to</label>
+                    <div class="col-md-3 mb-3">
+                      <label for="endDate">Range to</label>
                       <input id="endDate" class="form-control" width="100%" />
                     </div>
                   </div>
@@ -229,8 +221,6 @@
           </div>
         </div>
       </div>
-    
-    <span class="span2"><a href="index.html"><i class="fas fa-long-arrow-alt-left"></i> Back</a></span>
     </div>
     <script>
       var today = new Date(

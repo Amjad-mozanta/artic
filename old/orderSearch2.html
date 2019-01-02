@@ -39,18 +39,14 @@
     <link href="css/floating-labels.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
     <!------ Include the above in your HEAD tag ---------->
 
     <div id="wrapper" class="animate">
-      <span class="span"><a href="index.html"><i class="fas fa-long-arrow-alt-left"></i> Back</a></span>
+      <span class="span"
+        ><a href="#"><i class="fas fa-long-arrow-alt-left"></i> Back</a></span
+      >
       <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark ">
         <a href="index.html" class="logo"
           ><span class="sr-only">Al Futtaim</span>
@@ -128,7 +124,7 @@
                 <hr class="mb-3" />
                 <form class="needs-validation" novalidate="">
                   <div class="row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-6 mb-3">
                       <label for="country">Brand</label>
                       <select
                         class="custom-select d-block w-100"
@@ -158,7 +154,18 @@
                       <div class="invalid-feedback">Order Number required.</div>
                     </div>
                     <div class="col-md-3 mb-3">
-                      <label for="custName">Customer Name</label>
+                      <label for="Phone">Phone</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="Phone"
+                        placeholder=""
+                        required=""
+                      />
+                      <div class="invalid-feedback">Phone Number required.</div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="custName">Cutomer Name</label>
                       <input
                         type="text"
                         class="form-control"
@@ -171,7 +178,7 @@
                       </div>
                     </div>
                     <div class="col-md-3 mb-3">
-                      <label for="email">Customer Email</label>
+                      <label for="email">Email Name Starts With</label>
                       <input
                         type="text"
                         class="form-control"
@@ -181,33 +188,12 @@
                       />
                       <div class="invalid-feedback">email required.</div>
                     </div>
-
                     <div class="col-md-3 mb-3">
-                      <label for="country">Match Case begining With</label>
-                      <select
-                        class="custom-select d-block w-100"
-                        id="brand"
-                        required=""
-                      >
-                        <option value="">Choose...</option>
-                        <option>Match Case 1</option>
-                        <option>Match Case 2</option>
-                        <option>Match Case 3</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select a valid Match Case.
-                      </div>
-                    </div>
-
-
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <label for="startDate">Date from</label>
+                      <label for="startDate">Range from</label>
                       <input id="startDate" class="form-control" width="100%" />
                     </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="endDate">Date to</label>
+                    <div class="col-md-3 mb-3">
+                      <label for="endDate">Range to</label>
                       <input id="endDate" class="form-control" width="100%" />
                     </div>
                   </div>
@@ -216,7 +202,6 @@
                   <div class="col-md-3 mb-3 fr " style="padding-right: 0 ">
                     <button
                       id="SubmitBtn"
-                      onclick="window.location.href='orderSearch2.html'"
                       class="btn btn-primary btn-lg btn-block fr"
                       type="submit"
                     >
@@ -228,9 +213,78 @@
             </div>
           </div>
         </div>
+        <div id="Result1" class="row">
+          <div class="col">
+            <div class="card drkbdr">
+              <div class="card-body table-responsive">
+                <h4 class="card-title">Search Result</h4>
+                <a href="#" style="color: black;"><i class="fas fa-download right" style="float: right;margin-top: -31px;font-size: 20px;"></i></a>
+                <hr class="mb-3" />
+                <table class="table table-striped custab">
+                  <thead>
+                    <tr>
+                      <th scope="col">Order Number</th>
+                      <th scope="col">Customer Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Phone</th>
+                      <th scope="col">Order Type</th>
+                      <th scope="col">Payment Status</th>
+                      <th scope="col">Collection Store</th>
+                      <th scope="col">Order Date</th>
+                      <th scope="col">Order Status</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV1051034</a>
+                      </th>
+                      <td>Arjun raj</td>
+                      <td>arjun.raj@gmail.com</td>
+                      <td>9876543219</td>
+                      <td>HD</td>
+                      <td>Accepted</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>new</td>
+                      <td>70.8</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV233445</a>
+                      </th>
+                      <td>Vimal Kumar</td>
+                      <td>vimalk@gmail.com</td>
+                      <td>9567447233</td>
+                      <td>HD</td>
+                      <td>Accepted</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>open</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <a href="orderDetail.html">DEV3410456</a>
+                      </th>
+                      <td>Nila Sujith</td>
+                      <td>nila.sujith@gmail.com</td>
+                      <td>9843566462</td>
+                      <td>HD</td>
+                      <td>Accepted</td>
+                      <td>toysrus-UAE</td>
+                      <td>11/13/2018</td>
+                      <td>new</td>
+                      <td>708</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    
-    <span class="span2"><a href="index.html"><i class="fas fa-long-arrow-alt-left"></i> Back</a></span>
     </div>
     <script>
       var today = new Date(
