@@ -268,7 +268,7 @@
                     <tr>
                       <th scope="row">1</th>
                       <td>Plain Jersey T- Shirt</td>
-                      <td><a href="#"><img src="images/invoice.png"></a></td>
+                       <td><a><span class="spanImg" data-toggle="modal" data-target="#myModal" aria-expanded="false" aria-controls="collapseExample3" ><img src="images/invoice.png"></span></a></td>
                       <td>11/13/2018</td>
                       <td>2</td>
                       <td>COD</td>
@@ -280,10 +280,11 @@
                         <p>India</p>
                       </td>
                     </tr>
+
                     <tr>
                       <th scope="row">2</th>
                       <td>Printed Maroon jacket</td>
-                      <td><a href="#"><img src="images/invoice.png"></a></td>
+                      <td><a><span class="spanImg" data-toggle="modal" data-target="#myModal" aria-expanded="false" aria-controls="collapseExample3" ><img src="images/invoice.png"></span></a></td>
                       <td>11/13/2018</td>
                       <td>2</td>
                       <td>COD</td>
@@ -298,7 +299,7 @@
                     <tr>
                       <th scope="row">3</th>
                       <td>Lenin Hand Made rounded color Kurthas</td>
-                      <td><a href="#"><img src="images/invoice.png"></a></td>
+                       <td><a><span class="spanImg" data-toggle="modal" data-target="#myModal" aria-expanded="false" aria-controls="collapseExample3" ><img src="images/invoice.png"></span></a></td>
                       <td>11/13/2018</td>
                       <td>2</td>
                       <td>COD</td>
@@ -317,6 +318,8 @@
             </div>
           </div>
         </div>
+
+ 
         <div id="Result1" class="row">
           <div class="col">
             <div class="card drkbdr">
@@ -352,7 +355,7 @@
 
               <div class="col-md-12">
                       <!--Billing Address Section-->
-                <div class="row mv10">
+                <div class="row mb50">
                   <div class="col col-md-4">
                     <div class="card">
                       <div class="card-body">
@@ -413,32 +416,33 @@
         </div>
         <!--Billing Address Section-->
 
+            </div>
+          </div>
+        </div>
 
+        <div class="col-md-1 mt-2 mb-2 fr " style="padding-right: 0 ">
+          <button id="SubmitBtn" onclick="window.location.href='orderSearch2.html'" class="btn btn-primary btn-lg btn-block fr"type="submit">Ok</button>
+        </div>
+        <div class="col-md-2 mt-2 mb-2 fr " style="padding-right: 0 ">
+          <button id="SubmitBtn" class="bgc-gray white btn-default btn-lg btn-block fr"type="submit">Return Orders</button>
+        </div>
 
- <!--Return Orders-->
+      </div>
+    </div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" style="max-width: 75%;">
 
-        <div id="Result1" class="row">
-          <div class="col">
-            <div class="card drkbdr">
-              <h5 class="card-title margiNfitHead">Return Orders
-                <span class="spanImg" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3"><img src="images/add.png"></span> </h5>
-              <div class="card-body table-responsive" style="padding-top:0px;">
-                
-                <div class="collapse" id="collapseExample3">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="display:block">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Invoice</h4>
+      </div>
+      <div class="modal-body">
+        
 
-                 
-
-                    <div class="returntotal">
-                      <div class="returntext">Total Return Orders</div>
-                      <div class="returnNumber"><a href="#" id="returnCount">5</a></div>
-                      
-                    </div>
-                  
-
-                 
-                    <!--Invoice Template-->
-
-                        <div id="invoice" style="display: none;">
+                        <div id="invoice">
 
                             <div class="toolbar hidden-print">
                                 <div class="text-right">
@@ -610,38 +614,14 @@
                         </div>
                     <!--Invocie template-->
 
-
-                 
-                
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
- <!--Return Orders-->
-
-
-
-
-
-
-
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-1 mt-2 mb-2 fr " style="padding-right: 0 ">
-          <button id="SubmitBtn" onclick="window.location.href='orderSearch2.html'" class="btn btn-primary btn-lg btn-block fr"type="submit">Okay</button>
-        </div>
-        <div class="col-md-2 mt-2 mb-2 fr " style="padding-right: 0 ">
-          <button id="SubmitBtn" class="bgc-gray white btn-default btn-lg btn-block fr"type="submit">Return Orders</button>
-        </div>
-
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
+
+  </div>
+</div>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
