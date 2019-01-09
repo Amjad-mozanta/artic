@@ -9350,7 +9350,7 @@
     position: absolute;
     margin-top: -10px;
     top: 85px;
-    left: 100px; }
+    left: 30px; }
     #wrapper .span a {
       color: #2d2d2d; }
       #wrapper .span a img {
@@ -9365,7 +9365,7 @@
     position: absolute;
     margin-top: 20px;
     /* bottom: 35px;*/
-    left: 100px; }
+    left: 30px; }
     #wrapper .span2 a {
       color: #2d2d2d; }
       #wrapper .span2 a img {
@@ -9385,9 +9385,9 @@
   background: #133f8a; }
 
 @media (min-width: 992px) {
-  #wrapper {
-    margin-left: 70px; }
-
+  /*#wrapper {
+    margin-left: 70px;
+  }*/
   .navbar-nav.side-nav {
     text-align: center;
     background: #133f8a;
@@ -9528,6 +9528,7 @@ h5 {
 /*Invoice template*/
 #invoice {
   padding: 30px;
+  width: 69%;
   float: right;
   border: 1px solid gainsboro;
   margin-top: 30px; }
