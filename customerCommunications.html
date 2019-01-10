@@ -133,19 +133,19 @@
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">Customer Communications</h4>
+                <h4 class="card-title">Configure Communications</h4>
                 <hr class="mb-3" />
                 <form class="needs-validation" novalidate="">
 
                   <div class="row">
                     <div class="col-md-4 mb-3">
-                      <label for="country">Brand</label>
+                      <h5 for="country">Brand</h5>
                       <select
                         class="custom-select d-block w-100"
                         id="brand"
                         required=""
                       >
-                        <option value="">All</option>
+                       
                         <option>Brand Name</option>
                         <option>Brand Name</option>
                         <option>Brand Name</option>
@@ -161,118 +161,128 @@
 
                     <!-- Tabs -->
 
-                    <div class="col-md-6 tabBlocks">
-                      <h6 class="card-title">SMS</h6>
+                    <div class="col-md-12">
+                     
                       
-                          <main class="container pt-2  table-responsive">
+                          <main class=" table-responsive">
 
                               <table class="table table-bordered table-definition mb-5">
                                   <thead class="table-warning ">
                                       <tr>
-                                          <th>Type</th>
-                                          <th>Action</th>
-                                          <th>Browse </th>
+                                          <th>Order events</th>
+                                          <th>SMS</th>
+                                          <th>Email</th>
                                           
                                       </tr>
                                   </thead>
                                   <tbody>
                                       <tr>
                                           
-                                          <td>Order Confirmed</td>
+                                          <td>Order Returned</td>
                                           <td>
-                                              <label class="custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input">
-                                                  <span class="custom-control-indicator"></span>
-                                              </label>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check1">
+                                                  <label class="custom-control-label" for="check1"></label>
+                                              </div>
                                           </td>
                                           <td>
-                                              <div class="form-group">
-                                                <input type="file" name="img[]" class="file">
-                                                <div class="input-group col-xs-12">
-                                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                                                  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
-                                                  <span class="input-group-btn">
-                                                    <button class="browse BrowseBtn btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
-                                                  </span>
-                                                </div>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check2">
+                                                  <label class="custom-control-label" for="check2"></label>
                                               </div>
-                                            
-
                                           </td>
                                       </tr>
+
+
+
                                       <tr>
                                           
                                           <td>Order Declined</td>
                                           <td>
-                                              <label class="custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input">
-                                                  <span class="custom-control-indicator"></span>
-                                              </label>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check3">
+                                                  <label class="custom-control-label" for="check3"></label>
+                                              </div>
                                           </td>
                                           <td>
-                                              <div class="form-group">
-                                                <input type="file" name="img[]" class="file">
-                                                <div class="input-group col-xs-12">
-                                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                                                  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
-                                                  <span class="input-group-btn">
-                                                    <button class="browse BrowseBtn btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
-                                                  </span>
-                                                </div>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check4">
+                                                  <label class="custom-control-label" for="check4"></label>
                                               </div>
-                                            
-
                                           </td>
                                       </tr>
+
+
+
                                       <tr>
                                           
-                                          <td>Returned Order</td>
+                                          <td>Order Completed</td>
                                           <td>
-                                              <label class="custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input">
-                                                  <span class="custom-control-indicator"></span>
-                                              </label>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check5">
+                                                  <label class="custom-control-label" for="check5"></label>
+                                              </div>
                                           </td>
                                           <td>
-                                              <div class="form-group">
-                                                <input type="file" name="img[]" class="file">
-                                                <div class="input-group col-xs-12">
-                                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                                                  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
-                                                  <span class="input-group-btn">
-                                                    <button class="browse BrowseBtn btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
-                                                  </span>
-                                                </div>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check6">
+                                                  <label class="custom-control-label" for="check6"></label>
                                               </div>
-                                            
-
                                           </td>
                                       </tr>
+
+
+                                      <tr>
+                                          
+                                          <td>Order Confirmed</td>
+                                          <td>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check7">
+                                                  <label class="custom-control-label" for="check7"></label>
+                                              </div>
+                                          </td>
+                                          <td>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check8">
+                                                  <label class="custom-control-label" for="check8"></label>
+                                              </div>
+                                          </td>
+                                      </tr>
+
+
+
+                                      <tr>
+                                          
+                                          <td>Order Rejected</td>
+                                          <td>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check9">
+                                                  <label class="custom-control-label" for="check9"></label>
+                                              </div>
+                                          </td>
+                                          <td>
+                                              <!-- Default unchecked -->
+                                              <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="check10">
+                                                  <label class="custom-control-label" for="check10"></label>
+                                              </div>
+                                          </td>
+                                      </tr>
+
                                   </tbody>
 
                               </table>
 
-                                            <!--Pagination-->
-                              <nav aria-label="...">
-                                <ul class="pagination">
-                                  <li class="page-item disabled">
-                                    <span class="page-link">Previous</span>
-                                  </li>
-                                  <li class="page-item active">
-                                    <span class="page-link">
-                                      1
-                                      <span class="sr-only">(current)</span>
-                                    </span>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
 
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                  </li>
-                                </ul>
-                              </nav>
-                            <!--Pagination-->
 
                           </main>
 
@@ -282,126 +292,7 @@
 
 
 
-                    <!-- Tabs -->
-
-                    <div class="col-md-6 tabBlocks hideBorder">
-                      <h6 class="card-title">Email</h6>
-                       
-                          <main class="container pt-2 table-responsive">
-
-                              <table class="table table-bordered table-definition mb-5">
-                                  <thead class="table-warning ">
-                                      <tr>
-                                          <th>Type</th>
-                                          <th>Action</th>
-                                          <th>Browse </th>
-                                          
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                      <tr>
-                                          
-                                          <td>Order Collected</td>
-                                          <td>
-                                              <label class="custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input">
-                                                  <span class="custom-control-indicator"></span>
-                                              </label>
-                                          </td>
-                                          <td>
-                                              <div class="form-group">
-                                                <input type="file" name="img[]" class="file">
-                                                <div class="input-group col-xs-12">
-                                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                                                  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
-                                                  <span class="input-group-btn">
-                                                    <button class="browse BrowseBtn btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                            
-
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          
-                                          <td>Order Confirmed</td>
-                                          <td>
-                                              <label class="custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input">
-                                                  <span class="custom-control-indicator"></span>
-                                              </label>
-                                          </td>
-                                          <td>
-                                              <div class="form-group">
-                                                <input type="file" name="img[]" class="file">
-                                                <div class="input-group col-xs-12">
-                                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                                                  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
-                                                  <span class="input-group-btn">
-                                                    <button class="browse BrowseBtn btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                            
-
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          
-                                          <td>Order Declined</td>
-                                          <td>
-                                              <label class="custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input">
-                                                  <span class="custom-control-indicator"></span>
-                                              </label>
-                                          </td>
-                                          <td>
-                                              <div class="form-group">
-                                                <input type="file" name="img[]" class="file">
-                                                <div class="input-group col-xs-12">
-                                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                                                  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
-                                                  <span class="input-group-btn">
-                                                    <button class="browse BrowseBtn btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
-                                                  </span>
-                                                </div>
-                                              </div>
-                                            
-
-                                          </td>
-                                      </tr>
-                                  </tbody>
-
-                              </table>
-
-                                            <!--Pagination-->
-                              <nav aria-label="...">
-                                <ul class="pagination">
-                                  <li class="page-item disabled">
-                                    <span class="page-link">Previous</span>
-                                  </li>
-                                  <li class="page-item active">
-                                    <span class="page-link">
-                                      1
-                                      <span class="sr-only">(current)</span>
-                                    </span>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                  </li>
-                                </ul>
-                              </nav>
-                            <!--Pagination-->
-
-                          </main>
-
-                    </div>
-
-                    <!-- ./Tabs -->
+        
                     
                   </div>
 
